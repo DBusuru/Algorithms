@@ -1,0 +1,19 @@
+sentence := "This is an example sentence."
+lengthCounter := 0
+wordCounter := 1
+vowelCounter := 0
+
+FOR each character IN sentence DO
+    lengthCounter := lengthCounter + 1
+    IF character = " " THEN
+        wordCounter := wordCounter + 1
+    END_IF
+    IF character IN ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"] THEN
+        vowelCounter := vowelCounter + 1
+    END_IF
+END_FOR
+
+# Output the results
+Write("Length of the sentence: " + lengthCounter)
+Write("Number of words: " + wordCounter)
+Write("Number of vowels: " + vowelCounter)
